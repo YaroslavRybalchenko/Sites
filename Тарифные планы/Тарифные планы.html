@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ТелеНет/Тарифы</title>
+	<link rel="stylesheet" type="text/css" href="Стили/Style1.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="Скрипты/Greeting.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="hat">
+				<ul type="none">
+					<li>
+						<img src="Картинки/logo.png" height="70px">
+					</li>
+					<li class="logo"><a class="upper" href="#">ТелеНет Inc</a></li>
+					<li class="snav"><a class="upper" href="#">Главная</a></li>
+					<li class="snav"><a class="upper" href="#">Тарифы</a></li>
+					<li class="snav"><a class="upper" href="#">Смартфоны и гаджеты</a></li>
+					<li class="snav"><a class="upper" href="#">Личный кабинет</a></li>
+					<li class="snav"><a class="upper" href="#">Помощь</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h4>Навигация по странице</h4>
+		<nav>
+			<ol>
+				<li>
+					<a href="#tarplan">Выбор тарифного плана</a>
+				</li>
+				<li>
+					<a href="#kontinf">Информация</a>
+				</li>
+				<li>
+					<a href="#obrsvya">Обратная связь</a>
+				</li>
+			</ol>
+		</nav>
+	</header>
+	<form action="#">
+		<fieldset id="tarplan">
+			<legend>
+				Выбор тарифного плана
+			</legend>
+			<p>
+				<label>Выбор страны:
+					<select required="on">
+						<option>Россия</option>
+						<option selected="on">Украина</option>
+						<option>Беларусь</option>
+						<option>Казахстан</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label>Выбор тарифа:
+					<select required="on">
+						<option>Бомж</option>
+						<option>Бедняк</option>
+						<option>Батрак</option>
+						<option selected="on">Богач</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label>Дополнительные опции<br>
+					<input type="checkbox" name="option" value="VK">Безлимитный ВК<br>
+					<input type="checkbox" name="option" value="IN">Безлимитный Инстаграм<br>
+					<input type="checkbox" name="option" value="YT">Безлимитный YouTube<br>
+				</label>
+			</p>
+			<p>
+				<label>Подарочная опция<br>
+					<span class="pun">Выбери одну, жадина</span><br>
+					<input type="radio" name="option" value="OD">Безлимитные Одноклассники<br>
+					<input type="radio" name="option" value="RY">Безлимитный RuTube<br>
+					<input type="radio" name="option" value="RG">Бесплатная мелодия на рингтон<br>
+				</label>
+			</p>
+		</fieldset>
+		<fieldset id="kontinf">
+			<legend>
+				Информация
+			</legend>
+			<p>
+				<label>Имя:
+					<input size="70" style="margin: 0px 0px 0px 50px" type="text" name="vname" placeholder="Введите имя"
+						required="on">
+				</label>
+			</p>
+			<p>
+				<label>Фамилия:
+					<input size="70" style="margin: 0px 0px 0px 17px" type="text" name="fname"
+						placeholder="Введите фамилию" required="on">
+				</label>
+			</p>
+			<p>
+				<label>Телефон:
+					<input size="70" style="margin: 0px 0px 0px 21px" type="tel" pattern="[0-9]{7}" name="tel"
+						placeholder="7 чисел" required="on" size="50">
+				</label>
+			</p>
+			<p>
+				<label>E-mail:
+					<input size="70" style="margin: 0px 0px 0px 35px" type="email"
+						pattern="[A-z]{1,10}@[a-z]{1,10}.[a-z]{2}" name="email" placeholder="xxx@xxx.xx" required="on"
+						size="50">
+				</label>
+			</p>
+			<p>
+				<label>Номер банковской карты:
+					<input style="margin: 0px 0px 0px 3px" type="password" size="54" pattern="[0-9]{10}" name="bankcard"
+						placeholder="10 чисел" required="on" size="50">
+				</label>
+			</p>
+		</fieldset>
+		<input type="submit" name="submit-info" value="Оптправить">
+		<input type="reset" name="Сброс">
+	</form>
+	<form>
+		<fieldset id="obrsvya">
+			<legend>
+				Обратная связь
+			</legend>
+			<textarea placeholder="Тут вы можете связяться с нашим менеджером" style="resize: none" rows="10"
+				cols="100">
+			</textarea>
+			<br>
+		</fieldset>
+		<input type="submit" name="chatter">
+	</form>
+	<footer>
+		©Copyright TeleNet Incorporated
+		ALL RIGHTS RESERVED
+	</footer>
+</body>
+
+</html>
